@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+    background: red;
+    background-image: url(../images/light.jpg); 
+    background-size: cover; 
+}
+
+.contact-in {
+    width: 90%;  
+    max-width: 600px;  
+    margin: auto;
+    padding: 20px; 
+    border-radius: 20px;
+    background: white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+}
+
+.contact-form {
+    width: 100%;
+    text-align: center; /* Center the text */
+}
+
+.contact-form h1 {
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.contact-form-txt {
+    width: 100%;  
+    height: 50px; /* Increased height for better usability */
+    color: black;
+    border: 2px solid #bcbcbc; 
+    border-radius: 20px; 
+    outline: none;
+    margin: 10px 0; 
+    padding: 10px; 
+    font-size: 16px; /* Increased font size */
+}
+
+.contact-form-txt::placeholder {
+    color: #888; 
+}
+
+.contact-form-btn {
+    width: 100%;  
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: red;
+    color: white; /* Change text color to white */
+    text-transform: uppercase;
+    padding: 15px 0; /* Increased padding for larger button */
+    cursor: pointer;
+    font-size: 18px; /* Ensure font size is readable */
+    transition: background 0.3s, transform 0.2s; /* Added transform transition */
+    margin-top: 10px; /* Space above button */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.contact-form-btn:hover {
+    background: darkred; 
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+
+#error_message {
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 10px; /* Padding for error messages */
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 10px; /* Add rounded corners */
+    display: none; /* Initially hidden, show via JS if needed */
+}

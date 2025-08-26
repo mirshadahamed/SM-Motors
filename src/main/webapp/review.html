@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/contact.css">
+  
+</head>
+
+
+<body>
+    <jsp:include page="header2.jsp" />
+    
+    <div class="container">
+        <div class="wrapper">
+            <h2>Give Feedback</h2>
+            
+            <form id="myform" onsubmit="return validateReviewForm()" action="Contactus" method="POST">
+                <div class="form-container">
+                    <div class="user-details">
+                        <div class="input_field">
+                            <input type="text" placeholder="Email" name="email" id="email" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" placeholder="name" name="name" id="name" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" placeholder="Subject" name="subject" id="subject" required>
+                        </div>
+                        <div class="input_field">
+                            <input type="text" placeholder="phone" name="phone" id="phone" required>
+                        </div>
+                        
+                    </div>
+                    <div class="feedback-message">
+                        <div class="input_field">
+                            <textarea placeholder="message" id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+            
+            
+            <script>
+	            function validateReviewForm() {
+	                // Collecting all inputs
+	                var email = document.getElementById('email').value.trim();
+	                var name = document.getElementById('name').value.trim();
+	                var subject = document.getElementById('subject').value.trim();
+	                var phone = document.getElementById('phone').value.trim();
+	                var message = document.getElementById('message').value.trim();
+	
+	                // Using helper functions to validate
+	                if (!isValidEmail(email)) {
+	                    alert("Please enter a valid email address.");
+	                    return false;
+	                }
+	
+	                if (isEmpty(name)) {
+	                    alert("Please enter your name.");
+	                    return false;
+	                }
+	
+	                if (isEmpty(subject)) {
+	                    alert("Please enter a subject.");
+	                    return false;
+	                }
+	
+	                if (!isValidPhone(phone)) {
+	                    alert("Phone number must be exactly 10 digits.");
+	                    return false;
+	                }
+	
+	                if (isEmpty(message)) {
+	                    alert("Please enter your message.");
+	                    return false;
+	                }
+	
+	                return true; // If all validations pass
+	            }
+	
+	            // Helper function to check if a field is empty
+	            function isEmpty(value) {
+	                return value === "";
+	            }
+	
+	            // Helper function to validate email format
+	            function isValidEmail(email) {
+	                var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	                return emailPattern.test(email);
+	            }
+	
+	            // Helper function to validate phone number format (10 digits)
+	            function isValidPhone(phone) {
+	                if (phone === "") return true; // Allow empty phone field
+	                var phonePattern = /^\d{10}$/;
+	                return phonePattern.test(phone);
+	            }
+	
+	    </script>
+        </div>
+    </div>
+    
+   
+      
+</body>
+</html>

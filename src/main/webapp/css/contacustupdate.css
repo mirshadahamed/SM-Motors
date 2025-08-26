@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(122, 117, 117);
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/feed.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px;
+}
+
+.wrapper {
+    max-width: 700px;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+     margin-bottom: 175px;
+     margin-right: 400px;
+}
+
+.wrapper h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4a4a4a;
+    text-align: center; 
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.user-details,
+.feedback-message {
+    flex: 1; 
+}
+
+.wrapper .input_field {
+    margin-bottom: 15px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper .input_field textarea {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    transition: border-color 0.3s ease;
+}
+
+.wrapper .input_field textarea {
+    height: 100px; 
+    margin-top: 50px;
+}
+
+.btn {
+    border: none;
+    margin-top: 15px;
+    padding: 15px 15px;
+    background-color: red;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none; 
+}
+
+.placeholder {
+    color: black;
+}

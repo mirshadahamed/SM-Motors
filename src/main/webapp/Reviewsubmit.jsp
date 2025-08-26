@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+			*{
+				margin:0;
+				padding:0;
+                font-family: 'Poppins', sans-serif;
+			}
+			body{
+				display:flex;
+				min-height:100vh;
+				align-items:center;
+				justify-content:center;
+				background: white;
+			}
+			.box{
+				height:380px;
+				width:400px;
+				background: orange;
+				padding:20px;
+                border-radius: 30px;
+                padding-bottom: 30px;
+			}
+			.box div{
+				color: black;
+				font-size:30px;
+				font-weight:800;
+				text-align:center;
+				padding:20px 0;
+			}
+			.btn{
+				border-radius:30px;
+				color:red;
+				background: green;
+				margin-top:18px;
+				padding:10px;
+				background: reds;
+				font-size:18px;
+				border:none;
+				cursor:pointer;
+			}
+		</style>
+</head>
+<body>
+
+<body>
+		<div class="box">
+			<div>
+				<h1 style = "text-transform: uppercase;">Success!</h1><br>
+				   <h5>Your Review is Submit<br> !!!</h5>
+					<h4>Thanks for your Support<br> ?</h4>
+				<button type="button" class="btn"><a href="Home2.jsp" style = 'color: white; text-decoration: none;'>Go !!</a></button>
+				
+			</div>
+		</div>
+	</body>
+
+</body>
+</html>

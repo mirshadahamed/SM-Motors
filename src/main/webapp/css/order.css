@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: red;
+   background-image: url(../images/light.jpg);
+}
+
+.contact-in {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+    background: orange;
+}
+
+.contact-form {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form h1 {
+    margin-bottom: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.contact-form-txt {
+    flex: 1 1 45%; 
+    height: 40px;
+    color: black;
+    border: 2px solid #bcbcbc; 
+    border-radius: 50px;
+    outline: none;
+    margin: 0 10px 20px 0; 
+    padding: 15px;
+}
+
+.contact-form-txt:last-child {
+    margin-right: 0; 
+}
+
+.contact-form-txt::placeholder {
+    color: black;
+}
+
+.contact-form-btn {
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    
+}
+
+#error_message {
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}

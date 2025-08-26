@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/light.jpg); 
+    background-size: cover; 
+    
+}
+
+div.partsfeedback {
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2, h3 {
+    margin: 0;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #0056b3;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+p {
+    font-size: 1.2em; 
+    color: black;
+    margin: 10px 0;
+}
+
+button {
+    background-color:orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:red;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button a:hover {
+    color: #fff;
+}
